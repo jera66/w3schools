@@ -2,21 +2,24 @@
 <html>
 <body>
 
-<h2>Redeclaring a Variable Using var</h2>
+<h2>JavaScript const</h2>
+
+<p>Declaring a constant array does NOT make the elements unchangeable:</p>
 
 <p id="demo"></p>
 
 <script>
-var  x = 10;
-// Here x is 10
+// Create an Array:
+const cars = ["Saab", "Volvo", "BMW"];
 
-{  
-var x = 2;
-// Here x is 2
-}
+// Change an element:
+cars[0] = "Toyota";
 
-// Here x is 2
-document.getElementById("demo").innerHTML = x;
+// Add an element:
+cars.push("Audi");
+
+// Display the Array:
+document.getElementById("demo").innerHTML = cars; 
 </script>
 
 </body>
