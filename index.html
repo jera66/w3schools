@@ -2,17 +2,15 @@
 <html>
 <body>
 
-<h1>JavaScript Strings</h1>
-<h2>The trimEnd() Method</h2>
+<h2>JavaScript String Methods</h2>
+
+<p>The indexOf() method returns the position of the first occurrence of a specified text:</p>
 
 <p id="demo"></p>
 
 <script>
-let text1 = "     Hello World!     ";
-let text2 = text1.trimEnd();
-
-document.getElementById("demo").innerHTML =
-"Length text1 = " + text1.length + "<br>Length text2 = " + text2.length;
+let str = "Please locate where 'locate' occurs!";
+document.getElementById("demo").innerHTML = str.indexOf("locate");
 </script>
 
 </body>
