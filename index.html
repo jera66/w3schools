@@ -11,12 +11,17 @@
 <p>Template literals are not supported in Internet Explorer.</p>
 
 <script>
-let firstName = "John";
-let lastName = "Doe";
+let header = "Templates Literals";
+let tags = ["template literals", "javascript", "es6"];
 
-let text = `Welcome ${firstName}, ${lastName}!`;
+let html = `<h2>${header}</h2><ul>`;
 
-document.getElementById("demo").innerHTML = text;
+for (const x of tags) {
+  html += `<li>${x}</li>`;
+}
+
+html += `</ul>`;
+document.getElementById("demo").innerHTML = html;
 </script>
 
 </body>
