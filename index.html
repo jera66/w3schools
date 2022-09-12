@@ -4,13 +4,15 @@
 
 <h2>JavaScript String Methods</h2>
 
-<p>Both indexOf(), and lastIndexOf() return -1 if the text is not found:</p>
+<p>The lastIndexOf() method accepts a second parameter as the starting position for the search.</p>
+<p>Remember that the lastIndexOf() method searches backwards, so position 15 means start the search at position 15, and search to the beginning.</p>
+<p>Position 15 is position 15 from the beginning.</p>
 
 <p id="demo"></p>
 
 <script>
 let str = "Please locate where 'locate' occurs!";
-document.getElementById("demo").innerHTML = str.indexOf("John");
+document.getElementById("demo").innerHTML = str.lastIndexOf("locate", 15);
 </script>
 
 </body>
