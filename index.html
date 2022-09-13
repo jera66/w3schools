@@ -2,19 +2,19 @@
 <html>
 <body>
 
-<h2>JavaScript Numbers</h2>
+<h2>JavaScript Number Methods</h2>
 
-<p>If you add a numeric string and a number, the result will be a concatenated string:</p>
+<p>The toString() method converts a number to a string.</p>
 
 <p id="demo"></p>
 
 <script>
-let x = "10";
-let y = 20;
-document.getElementById("demo").innerHTML = "The result is: " + x + y;
+let x = 123;
+document.getElementById("demo").innerHTML =
+  x.toString() + "<br>" +
+   (123).toString() + "<br>" +
+   (100 + 23).toString();
 </script>
 
 </body>
 </html>
-
-
