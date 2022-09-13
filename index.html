@@ -4,17 +4,17 @@
 
 <h2>JavaScript Number Methods</h2>
 
-<p>The toPrecision() method returns a string, with a number written with a specified length:</p>
+<p>The valueOf() method returns a number as a number:</p>
 
 <p id="demo"></p>
 
 <script>
-let x = 9.656;
+let x = 123;
+
 document.getElementById("demo").innerHTML = 
-  x.toPrecision() + "<br>" +
-  x.toPrecision(2) + "<br>" +
-  x.toPrecision(4) + "<br>" +
-  x.toPrecision(6);  
+  x.valueOf() + "<br>" +
+  (123).valueOf() + "<br>" +
+  (100 + 23).valueOf();
 </script>
 
 </body>
